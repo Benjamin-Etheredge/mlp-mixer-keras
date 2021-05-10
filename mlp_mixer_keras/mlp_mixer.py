@@ -103,11 +103,10 @@ def MlpMixerModel(
         channels_mlp_dim: int = None,
         use_softmax: bool = False,
     ):
-    
     height, width, _ = input_shape
 
     if channels_mlp_dim is None:
-       channels_mlp_dim = tokens_mlp_dim
+        channels_mlp_dim = tokens_mlp_dim
 
     num_patches = (height*width)//(patch_size**2)  # TODO verify how this behaves with same padding
 
@@ -124,9 +123,9 @@ def MlpMixerModel(
 
     for _ in range(num_blocks):
         x = MixerBlock(num_patches=num_patches,
-                        channel_dim=hidden_dim,
-                        token_mixer_hidden_dim=tokens_mlp_dim,
-                        channel_mixer_hidden_dim=channels_mlp_dim)(x)
+                       channel_dim=hidden_dim,
+                       token_mixer_hidden_dim=tokens_mlp_dim,
+                       channel_mixer_hidden_dim=channels_mlp_dim)(x)
 
     x = GlobalAveragePooling1D()(x)  # TODO verify this global average pool is correct choice here
 
