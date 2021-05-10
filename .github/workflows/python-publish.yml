@@ -5,7 +5,7 @@ name: Upload Python Package
 
 on:
   release:
-    types: [push]
+    types: [push, pull_request]
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
   
 
   create-release:
-    needs: sync-branch
+    needs: build
     name: Create Release
     runs-on: ubuntu-latest
     steps:
