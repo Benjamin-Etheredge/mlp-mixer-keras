@@ -48,8 +48,7 @@ class MixerBlock(Layer):
         channel_dim: int,
         token_mixer_hidden_dim: int,
         channel_mixer_hidden_dim: int = None,
-        activation = None,
-        name = None,
+        activation=None,
         **kwargs
     ):
         super(MixerBlock, self).__init__(**kwargs)
