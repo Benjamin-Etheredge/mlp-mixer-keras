@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="mlp-mixer-keras",
-    version="0.0.1",
+    version="0.0.2",
     license='MIT',
     author="Benjamin Etheredge",
     author_email="",
@@ -18,8 +18,11 @@ setuptools.setup(
         'tensorflow>=2.1'
     ],
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Operating System :: OS Independent",
     ],
 )
