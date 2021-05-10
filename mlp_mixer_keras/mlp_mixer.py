@@ -102,7 +102,7 @@ def MlpMixerModel(
         tokens_mlp_dim: int,
         channels_mlp_dim: int = None,
         use_softmax: bool = False,
-    ):
+):
     height, width, _ = input_shape
 
     if channels_mlp_dim is None:
