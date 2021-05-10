@@ -21,3 +21,17 @@ model = MlpMixerModel(input_shape = x_train.shape[1:],
 model.compile(loss='sparse_categorical_crossentropy', metrics='acc')
 model.fit(x_train, y_train, validation_data=(x_test, y_test))
 ```
+
+
+## References
+
+### MLP-Mixer: An all-MLP Architecture for Vision
+Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Thomas Unterthiner, Jessica Yung, Daniel Keysers, Jakob Uszkoreit, Mario Lucic, Alexey Dosovitskiy [*MLP-Mixer: An all-MLP Architecture for Vision*](https://arxiv.org/abs/2105.01601)
+@misc{tolstikhin2021mlpmixer,
+      title={MLP-Mixer: An all-MLP Architecture for Vision}, 
+      author={Ilya Tolstikhin and Neil Houlsby and Alexander Kolesnikov and Lucas Beyer and Xiaohua Zhai and Thomas Unterthiner and Jessica Yung and Daniel Keysers and Jakob Uszkoreit and Mario Lucic and Alexey Dosovitskiy},
+      year={2021},
+      eprint={2105.01601},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
