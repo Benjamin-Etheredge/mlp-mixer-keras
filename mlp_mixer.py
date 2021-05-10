@@ -85,7 +85,7 @@ class MixerBlock(Layer):
         x = self.norm2(x)
         x = self.channel_mixer(x)
 
-        x = self.skip_connection2([x, skip_x]) # TODO need 2?
+        x = self.skip_connection2([x, skip_x])  # TODO need 2?
 
         return x
 
@@ -115,10 +115,10 @@ def MlpMixerModel(
     x = inputs
 
     x = Conv2D(hidden_dim,
-            kernel_size=patch_size,
-            strides=patch_size,
-            padding='same',
-            name='projector')(x)
+               kernel_size=patch_size,
+               strides=patch_size,
+               padding='same',
+               name='projector')(x)
 
     x = keras.layers.Reshape([-1, hidden_dim])(x)
 
