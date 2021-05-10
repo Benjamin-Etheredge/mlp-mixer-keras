@@ -43,6 +43,9 @@ Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, 
 }
 ```
 
+### MLP-Mixer: An all-MLP Architecture for Vision (Machine Learning Research Paper Explained)
+Excellent Yannic Kilcher explainer [video](https://youtu.be/7K4Z8RqjWIk). 
+
 ### MLP Mixer - Pytorch
 A pytorch implementation of MLP-Mixer. This repo helped a alot as I learned the ways of making a nice github repo for a project.
 
