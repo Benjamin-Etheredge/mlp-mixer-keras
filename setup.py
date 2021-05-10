@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="mlp-mixer-keras",
-    version="0.0.2",
+    version="0.0.3",
     license='MIT',
     author="Benjamin Etheredge",
     author_email="",
