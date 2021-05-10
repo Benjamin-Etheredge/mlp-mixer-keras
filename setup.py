@@ -9,7 +9,7 @@ setuptools.setup(
     license='MIT',
     author="Benjamin Etheredge",
     author_email="",
-    description="An implementation of MLP-Mixer in Keras/Tensorflow",
+    description="MLP-Mixer in Keras/Tensorflow",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Benjamin-Etheredge/mlp-mixer-keras",
