@@ -4,10 +4,12 @@
 
 This is a simple keras implementation of MLP-Mixer. MLP-Mixer is an (mostly) all dense layer approach to vision like tasks.
 ## Install
-```$ pip install mlp-mixer-keras```
+```bash
+$ pip install mlp-mixer-keras
+```
 
 ## Example usage
-```
+```python
 from mlp_mixer_keras import MlpMixerModel 
 import numpy as np
 
@@ -44,4 +46,6 @@ Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, 
 ### MLP Mixer - Pytorch
 A pytorch implementation of MLP-Mixer. This repo helped a alot as I learned the ways of making a nice github repo for a project.
 
-[*MLP Mixer - Pytorch*](https://github.com/lucidrains/mlp-mixer-pytorch)
+Phil Wang - [lucidrains](https://github.com/lucidrains)
+
+ [*MLP Mixer - Pytorch*](https://github.com/lucidrains/mlp-mixer-pytorch)
