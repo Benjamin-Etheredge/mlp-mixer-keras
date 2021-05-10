@@ -2,7 +2,7 @@
 <img align='center' src='mlp-mixer.png'>
 
 
-This is a simple keras implementation of MLP-Mixer. MLP-Mixer is an (mostly) all dense layer approach to vision like tasks.
+This is a simple keras implementation of MLP-Mixer. MLP-Mixer is an almost exclusivly multi-layer perceptions approach to vision like tasks.
 ## Install
 ```bash
 $ pip install mlp-mixer-keras
