@@ -3,8 +3,8 @@
 
 
 This is a simple keras implementation of MLP-Mixer. MLP-Mixer is an (mostly) all dense layer approach to vision like tasks.
-## Instaltion
-``pip install mlp-mixer-keras``
+## Install
+```$ pip install mlp-mixer-keras```
 
 ## Example usage
 ```
@@ -28,7 +28,7 @@ model.fit(x_train, y_train, validation_data=(x_test, y_test))
 ## References
 
 ### MLP-Mixer: An all-MLP Architecture for Vision
-Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Thomas Unterthiner, Jessica Yung, Daniel Keysers, Jakob Uszkoreit, Mario Lucic, Alexey Dosovitskiy [*MLP-Mixer: An all-MLP Architecture for Vision*](https://arxiv.org/abs/2105.01601)
+Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Thomas Unterthiner, Jessica Yung, Daniel Keysers, Jakob Uszkoreit, Mario Lucic, Alexey Dosovitskiy, [*MLP-Mixer: An all-MLP Architecture for Vision*](https://arxiv.org/abs/2105.01601)
 
 ```bibtex
 @misc{tolstikhin2021mlpmixer,
@@ -40,3 +40,8 @@ Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, 
       primaryClass={cs.CV}
 }
 ```
+
+### MLP Mixer - Pytorch
+A pytorch implementation of MLP-Mixer. This repo helped a alot as I learned the ways of making a nice github repo for a project.
+
+[*MLP Mixer - Pytorch*](https://github.com/lucidrains/mlp-mixer-pytorch)
