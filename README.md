@@ -14,7 +14,7 @@ from mlp_mixer_keras import MlpMixerModel
 import numpy as np
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.cifar10.load_data()
-model = MlpMixerModel(input_shape = x_train.shape[1:],
+model = MlpMixerModel(input_shape=x_train.shape[1:],
                       num_classes=len(np.unique(y_train)), 
                       num_blocks=4, 
                       patch_size=8,
