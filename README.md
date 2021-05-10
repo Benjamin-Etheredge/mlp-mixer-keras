@@ -1,6 +1,8 @@
 # MLP-Mixer in Keras
 <img align='center' src='mlp-mixer.png'>
-This is a keras implementation of MLP-Mixer
+
+
+This is a simple keras implementation of MLP-Mixer.
 
 ## Example usage
 ```
