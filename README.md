@@ -1,5 +1,5 @@
 # MLP-Mixer in Keras
-<img align='center' src='mlp-mixer.png>
+<img align='center' src='mlp-mixer.png'>
 This is a keras implementation of MLP-Mixer
 
 ## Example usage
