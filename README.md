@@ -2,7 +2,9 @@
 <img align='center' src='mlp-mixer.png'>
 
 
-This is a simple keras implementation of MLP-Mixer.
+This is a simple keras implementation of MLP-Mixer. MLP-Mixer is an (mostly) all dense layer approach to vision like tasks.
+## Instaltion
+``pip install mlp-mixer-keras``
 
 ## Example usage
 ```
@@ -27,6 +29,8 @@ model.fit(x_train, y_train, validation_data=(x_test, y_test))
 
 ### MLP-Mixer: An all-MLP Architecture for Vision
 Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, Thomas Unterthiner, Jessica Yung, Daniel Keysers, Jakob Uszkoreit, Mario Lucic, Alexey Dosovitskiy [*MLP-Mixer: An all-MLP Architecture for Vision*](https://arxiv.org/abs/2105.01601)
+
+```bibtex
 @misc{tolstikhin2021mlpmixer,
       title={MLP-Mixer: An all-MLP Architecture for Vision}, 
       author={Ilya Tolstikhin and Neil Houlsby and Alexander Kolesnikov and Lucas Beyer and Xiaohua Zhai and Thomas Unterthiner and Jessica Yung and Daniel Keysers and Jakob Uszkoreit and Mario Lucic and Alexey Dosovitskiy},
@@ -35,3 +39,4 @@ Ilya Tolstikhin, Neil Houlsby, Alexander Kolesnikov, Lucas Beyer, Xiaohua Zhai, 
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+```
