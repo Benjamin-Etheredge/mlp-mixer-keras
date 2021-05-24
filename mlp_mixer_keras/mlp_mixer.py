@@ -62,8 +62,14 @@ class MixerBlock(Layer):
     ):
         super(MixerBlock, self).__init__(**kwargs)
 
+        self.num_patches = num_patches
+        self.channel_dim = channel_dim
+        self.token_mixer_hidden_dim = token_mixer_hidden_dim
+        self.channel_mixer_hidden_dim = channel_mixer_hidden_dim
+        self.activation = activation
+
         if activation is None:
-            activation = keras.activations.gelu
+            self.activation = keras.activations.gelu
 
         if channel_mixer_hidden_dim is None:
             channel_mixer_hidden_dim = token_mixer_hidden_dim
@@ -100,6 +106,17 @@ class MixerBlock(Layer):
 
     def compute_output_shape(self, input_shape):
         return input_shape
+    
+    def get_config(self):
+        config = super(MixerBlock, self).get_config()
+        return {
+            **config,
+            'num_patches': self.num_patches,
+            'channel_dim': self.channel_dim,
+            'token_mixer_hidden_dim': self.token_mixer_hidden_dim,
+            'channel_mixer_hidden_dim': self.channel_mixer_hidden_dim,
+            'activation': self.activation,
+        }
 
 
 def MlpMixerModel(
