@@ -106,7 +106,7 @@ class MixerBlock(Layer):
 
     def compute_output_shape(self, input_shape):
         return input_shape
-    
+
     def get_config(self):
         config = super(MixerBlock, self).get_config()
         config.update({
