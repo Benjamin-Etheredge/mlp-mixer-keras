@@ -43,11 +43,11 @@ class MlpBlock(Layer):
 
     def get_config(self):
         config = super(MlpBlock, self).get_config()
-        return {
-            **config,
+        config.update({
             'dim': self.dim,
             'hidden_dim': self.hidden_dim
-        }
+        })
+        return config
 
 
 class MixerBlock(Layer):
@@ -109,14 +109,14 @@ class MixerBlock(Layer):
     
     def get_config(self):
         config = super(MixerBlock, self).get_config()
-        return {
-            **config,
+        config.update({
             'num_patches': self.num_patches,
             'channel_dim': self.channel_dim,
             'token_mixer_hidden_dim': self.token_mixer_hidden_dim,
             'channel_mixer_hidden_dim': self.channel_mixer_hidden_dim,
             'activation': self.activation,
-        }
+        })
+        return config
 
 
 def MlpMixerModel(
