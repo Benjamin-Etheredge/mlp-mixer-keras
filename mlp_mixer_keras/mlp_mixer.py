@@ -26,6 +26,7 @@ class MlpBlock(Layer):
             activation = keras.activations.gelu
 
         self.dim = dim
+        self.hidden_dim = dim
         self.dense1 = Dense(hidden_dim)
         self.activation = Activation(activation)
         self.dense2 = Dense(dim)
@@ -39,6 +40,14 @@ class MlpBlock(Layer):
 
     def compute_output_shape(self, input_signature):
         return (input_signature[0], self.dim)
+
+    def get_config(self):
+        config = super(MlpBlock, self).get_config()
+        return {
+            **config,
+            'dim': self.dim,
+            'hidden_dim': self.hidden_dim
+        }
 
 
 class MixerBlock(Layer):
